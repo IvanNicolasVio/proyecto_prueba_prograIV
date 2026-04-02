@@ -1,5 +1,15 @@
-
-<p>Introduce tus credenciales:</p>
-<input type="text" placeholder="Username" [(ngModel)]="username">
-<input type="password" placeholder="Password" [(ngModel)]="password">
-<button (click)="login()">Login</button>
+<div class="login-wrapper">
+  <div class="login-card">
+    <p>Introduce tus credenciales</p>
+    
+    <input type="text" placeholder="Username" [(ngModel)]="username">
+    
+    <input type="password" placeholder="Password" [(ngModel)]="password">
+    
+    <button (click)="login()">Login</button>
+    
+    <div class="error-message" *ngIf="error">
+      <p>{{error}}</p>
+    </div>
+  </div>
+</div>
