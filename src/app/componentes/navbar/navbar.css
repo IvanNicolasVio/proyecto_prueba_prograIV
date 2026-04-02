@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #270065;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+
+    /*position: fixed;    /* La fija en la pantalla */
+    top: 0;             /* La pega al borde superior */
+    left: 0;            /* La pega al borde izquierdo */
+    width: 100%;        /* Asegura que ocupe todo el ancho */
+    z-index: 1000;      /* La mantiene por encima de cualquier otro elemento */
+}
+
+.navbar button {
+    background: transparent; /* Hace el fondo transparente */
+    border: none;             /* Elimina el borde gris por defecto */
+    cursor: pointer;          /* Cambia el cursor a la mano al pasar por encima */
+    padding: 8px 16px;        /* Espaciado interno para que sea fácil clickear */
+    font-size: 16px;          /* Ajusta el tamaño según prefieras */
+}
+
+.navbar button a {
+    text-decoration: none;    /* Quita el subrayado del enlace */
+    color: white
+}
+
+.navbar button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Blanco muy suave */
+    transition: background-color 0.3s ease;    /* Hace que el cambio sea suave */
+}
